@@ -1,4 +1,4 @@
-package com.xask00.study.bitmanipulation;
+package com.xask00.study.problems.bitmanipulation;
 
 public class BitwiseSubtraction {
     public static void main(String[] args) {

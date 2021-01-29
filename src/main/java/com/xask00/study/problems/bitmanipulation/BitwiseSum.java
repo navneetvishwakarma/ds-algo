@@ -1,4 +1,4 @@
-package com.xask00.study.bitmanipulation;
+package com.xask00.study.problems.bitmanipulation;
 
 /**
  * Problem: Add two numbers without using arithmetic operators (by adding two numbers)
