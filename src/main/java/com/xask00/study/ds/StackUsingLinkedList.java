@@ -8,9 +8,11 @@ public class StackUsingLinkedList implements Stack{
     }
 
     private Node top;
+    private int size = 0;
 
     public StackUsingLinkedList() {
         this.top = null;
+        this.size = 0;
     }
 
     @Override
@@ -18,19 +20,22 @@ public class StackUsingLinkedList implements Stack{
         Node node = new Node();
         if (node == null) {
             System.out.println("\nHeap Overflow");
+            throw new RuntimeException("Heap Overflow");
         }
         node.value = num;
         node.next = this.top;
         this.top = node;
+        this.size++;
     }
 
     @Override
     public void pop() {
         if (this.isEmpty()) {
             System.out.println("\nStack is empty");
-            throw new RuntimeException("Epmty stack.");
+            throw new RuntimeException("Empty stack.");
         } else {
             this.top = this.top.next;
+            this.size--;
         }
     }
 
@@ -42,6 +47,11 @@ public class StackUsingLinkedList implements Stack{
         } else {
             return this.top.value;
         }
+    }
+
+    @Override
+    public int size() {
+        return this.size;
     }
 
     @Override
