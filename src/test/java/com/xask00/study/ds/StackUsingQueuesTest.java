@@ -36,6 +36,17 @@ public class StackUsingQueuesTest {
         Assert.assertTrue("Stack must be empty", stack.isEmpty());
     }
 
+    @Test
+    public void StackSizeTest() {
+        stack.push(1);
+        stack.push(2);
+        Assert.assertEquals("Stack size should be 2", 2, stack.size());
+        stack.pop();
+        Assert.assertEquals("Stack size should be 1", 1, stack.size());
+        stack.pop();
+        Assert.assertEquals("Stack size should be 0", 0, stack.size());
+    }
+
     @Test(expected = RuntimeException.class)
     public void StackPopExceptionTest() {
         stack.pop();

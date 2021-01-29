@@ -44,6 +44,11 @@ public class StackUsingQueues implements Stack{
     }
 
     @Override
+    public int size() {
+        return this.primaryQueue.size();
+    }
+
+    @Override
     public boolean isEmpty() {
         return this.primaryQueue.isEmpty();
     }
