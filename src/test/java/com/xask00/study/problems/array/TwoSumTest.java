@@ -16,8 +16,28 @@ public class TwoSumTest {
 
     @Test
     public void test1() {
-        this.arr = new int[]{3, 8, 5, 1, 9};
-        Assert.assertTrue(this.twoSum.isPossible(arr, 13));
-        Assert.assertFalse(this.twoSum.isPossible(arr, 5));
+        this.arr = new int[]{2, 7, 11, 15};
+        int[] result = this.twoSum.twoSum(arr, 9);
+        Assert.assertNotNull(result);
+        Assert.assertEquals(0, result[0]);
+        Assert.assertEquals(1, result[1]);
+    }
+
+    @Test
+    public void test2() {
+        this.arr = new int[]{3, 2, 4};
+        int[] result = this.twoSum.twoSum(arr, 6);
+        Assert.assertNotNull(result);
+        Assert.assertEquals(1, result[0]);
+        Assert.assertEquals(2, result[1]);
+    }
+
+    @Test
+    public void test3() {
+        this.arr = new int[]{3, 3};
+        int[] result = this.twoSum.twoSum(arr, 6);
+        Assert.assertNotNull(result);
+        Assert.assertEquals(0, result[0]);
+        Assert.assertEquals(1, result[1]);
     }
 }

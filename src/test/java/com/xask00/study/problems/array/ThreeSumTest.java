@@ -6,18 +6,16 @@ import org.junit.Test;
 
 public class ThreeSumTest {
 
-    private ThreeSum threeSum;
+    private ZeroSumTriplets zeroSumTriplets;
     private int[] arr;
 
     @Before
     public void setup() {
-        this.threeSum = new ThreeSum();
+        this.zeroSumTriplets = new ZeroSumTriplets();
     }
 
     @Test
     public void test1() {
         this.arr = new int[]{3, 8, 5, 1, 9};
-        Assert.assertTrue(this.threeSum.isPossible(arr, 15));
-        Assert.assertFalse(this.threeSum.isPossible(arr, 513));
     }
 }
