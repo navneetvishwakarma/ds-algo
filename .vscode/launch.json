@@ -1,0 +1,63 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        },
+        {
+            "type": "java",
+            "name": "App",
+            "request": "launch",
+            "mainClass": "com.xask00.study.App",
+            "projectName": "ds-algo"
+        },
+        {
+            "type": "java",
+            "name": "NQueensProblem",
+            "request": "launch",
+            "mainClass": "com.xask00.study.problems.backtrack.NQueensProblem",
+            "projectName": "ds-algo"
+        },
+        {
+            "type": "java",
+            "name": "Sudoku",
+            "request": "launch",
+            "mainClass": "com.xask00.study.problems.backtrack.Sudoku",
+            "projectName": "ds-algo"
+        },
+        {
+            "type": "java",
+            "name": "BitwiseSubtraction",
+            "request": "launch",
+            "mainClass": "com.xask00.study.problems.bitmanipulation.BitwiseSubtraction",
+            "projectName": "ds-algo"
+        },
+        {
+            "type": "java",
+            "name": "BitwiseSum",
+            "request": "launch",
+            "mainClass": "com.xask00.study.problems.bitmanipulation.BitwiseSum",
+            "projectName": "ds-algo"
+        },
+        {
+            "type": "java",
+            "name": "BestSum",
+            "request": "launch",
+            "mainClass": "com.xask00.study.problems.dp.BestSum",
+            "projectName": "ds-algo"
+        },
+        {
+            "type": "java",
+            "name": "HasSum",
+            "request": "launch",
+            "mainClass": "com.xask00.study.problems.dp.HasSum",
+            "projectName": "ds-algo"
+        }
+    ]
+}
