@@ -8,8 +8,6 @@ import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 
-import com.xask00.study.lld.parkinglot.Car;
-import com.xask00.study.lld.parkinglot.ElectricCar;
 import com.xask00.study.lld.parkinglot.MultiLevelParking;
 import com.xask00.study.lld.parkinglot.NearestFirstParkingStrategy;
 import com.xask00.study.lld.parkinglot.ParkingFloor;
