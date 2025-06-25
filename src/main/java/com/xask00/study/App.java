@@ -1,7 +1,5 @@
 package com.xask00.study;
 
-import java.util.List;
-import com.xask00.study.problems.array.ZeroSumTriplets;
 import com.xask00.study.problems.linkedlist.ListNode;
 import com.xask00.study.problems.linkedlist.OddEvenLinkedList;
 

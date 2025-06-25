@@ -18,10 +18,6 @@ public class StackUsingLinkedList implements Stack{
     @Override
     public void push(int num) {
         Node node = new Node();
-        if (node == null) {
-            System.out.println("\nHeap Overflow");
-            throw new RuntimeException("Heap Overflow");
-        }
         node.value = num;
         node.next = this.top;
         this.top = node;
